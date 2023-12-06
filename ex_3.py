@@ -18,7 +18,8 @@ while True:
         break
     except ValueError:
         print('Введена пустая стока')
+a = { x: string.count(x) for x in string if x not in " 0123456789"}
+print(a)
+for k,v in a.items():
+    print(f'Символ "{k}" встречается в строке - {v} раз')
 
-dict_ = {x:string.count(x) for x in string}
-for s in dict_:
-    print(f'Символ "{s}" встречается в строке - {dict_[s]}')
